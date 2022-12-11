@@ -1,0 +1,28 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Artifacts
+_obj/
+_test/
+
+# Dep files
+**/Gopkg.lock
+**/Gopkg.toml
+
+# Go build artifacts
+**/*.so
+**/*.cgo1.go
+**/*.cgo2.c
+
+.idea
+.DS_Store
