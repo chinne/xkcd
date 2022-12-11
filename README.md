@@ -1,8 +1,16 @@
 # XKCD scraper
 
-This tool is scraping the latest image from [xkcd](https://xkcd.com/).
+This tool scrapes the latest comic from [xkcd](https://xkcd.com/). A xkcd comic typically looks like this:
+
+
+**The Cloud**
+
+![The Cloud](https://imgs.xkcd.com/comics/the_cloud.png)
+
+*Source: [XKCD](https://xkcd.com/908/)*
 
 ## Installation
+
 To build the Go program in Windows, Linux, and macOS, you can use the go build command.
 This command will compile the Go source code into an executable binary file that you can run on the target platform.
 
@@ -30,10 +38,12 @@ must use a macOS system.
 ### Note: robots.txt
 
 The [robots.txt](https://xkcd.com/robots.txt) allows:
+
 ```text
 User-agent: *
 Disallow: /personal/
 ```
+
 The robots.txt file is a text file that webmasters create to instruct web robots (typically search engine robots) on
 which pages or files the robot should not access. In this case, the User-agent: * line applies the rule to all robots,
 and the Disallow: /personal/ line tells them not to access any pages or files in the /personal/ directory. This means
